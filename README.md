@@ -1,8 +1,16 @@
 # React + Vite
+To install : npm create vite@latest my-react-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To run a React application from a GitHub repository, follow these steps:
 
-Currently, two official plugins are available:
+1. Clone the Repository
+-> git clone https://github.com/username/repo.git
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Navigate to the Project Directory
+-> cd repo
+
+3. Install Dependencies
+-> npm install
+
+4. Run the Development Server
+-> npm run dev
