@@ -1,0 +1,139 @@
+/* Base Styles */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #FFFFFF;
+    padding: 90px;
+    flex-wrap: wrap;
+    /* Allows columns to wrap on smaller screens */
+}
+
+.footer p {
+    color: #FFFFFF;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Responsive Design */
+
+/* Mobile devices (up to 400px) */
+@media screen and (max-width: 400px) {
+    .footer {
+        padding: 20px;
+        /* Reduced padding for smaller screens */
+        flex-direction: column;
+        align-items: center;
+        /* Center items in column layout */
+    }
+
+    .footer-column {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-logo {
+        font-size: 20px;
+
+    }
+
+    .footer-column h4 {
+        font-size: 16px;
+    }
+
+    .footer-column input[type="email"] {
+        max-width: 100%;
+    }
+}
+
+/* Tablets and small screens (401px to 720px) */
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .footer {
+        padding: 40px;
+    }
+
+    .footer-column {
+        margin: 15px;
+    }
+
+    .footer-logo {
+        font-size: 22px;
+    }
+
+    .footer-column h4 {
+        font-size: 17px;
+    }
+
+    .footer-column input[type="email"] {
+        max-width: 100%;
+    }
+}
+
+/* Small to medium desktops (721px to 1280px) */
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    .footer {
+        padding: 60px;
+    }
+
+    .footer-column {
+        margin: 20px;
+    }
+
+    .footer-logo {
+        font-size: 24px;
+    }
+
+    .footer-column h4 {
+        font-size: 18px;
+    }
+}
+
+/* Large desktops (1281px and up) */
+@media screen and (min-width: 1281px) {
+    .footer {
+        padding: 90px;
+    }
+
+    .footer-column {
+        margin: 20px;
+    }
+
+    .footer-logo {
+        font-size: 24px;
+    }
+
+    .footer-column h4 {
+        font-size: 18px;
+    }
+}

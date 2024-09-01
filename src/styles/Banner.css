@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Featured Car Section */
+.featured-car {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px 80px;
+    color: #2B3674;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* padding: 20px; */
+    /* gap: 20px; */
+
+    /* Added for spacing between elements */
+}
+
+.featured-info {
+    width: 50%;
+    /* Set width to 100% in smaller screens */
+}
+
+.featured-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.car-details-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.featured-title {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    width: 100%;
+    font-weight: bold;
+    background-color: #2B3674;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.featured-icon img {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.featured-info h2 {
+    font-size: 22px;
+    color: #2B3674;
+    margin-top: 50px;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #bdc3c7;
+    margin: 10px 0;
+}
+
+.date-time {
+    color: #2B3674;
+    font-size: 14px;
+}
+
+.featured-info h3 {
+    font-size: 24px;
+    color: #2B3674;
+    margin: 10px 0;
+}
+
+.featured-info h3 span {
+    font-size: 16px;
+    color: #2B3674;
+    font-weight: normal;
+}
+
+.trusted-seller {
+    color: #2B3674;
+    font-weight: bold;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.check-icon img {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.find-more {
+    margin-top: 20px;
+    color: #2B3674;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.arrow-icon img {
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.featured-image {
+    position: relative;
+    width: 100%;
+    /* Adjusted for responsive design */
+    text-align: center;
+    /* margin-top: 25px; */
+    /* Center image in smaller screens */
+}
+
+.featured-image img {
+    width: 100%;
+    /* Make image responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.time-banner {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ecf0f1;
+    color: #2B3674;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.time-remaining {
+    color: #2B3674;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .featured-car {
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .featured-info {
+        width: 100%;
+        padding-left: 0;
+        /* Remove padding on smaller screens */
+    }
+
+    .car-details-main {
+        padding-left: 0;
+        /* Remove padding on smaller screens */
+    }
+
+    .featured-image {
+        width: 100%;
+
+    }
+
+    .featured-title {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-car {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .featured-info h2 {
+        font-size: 20px;
+    }
+
+    .featured-info h3 {
+        font-size: 22px;
+    }
+
+    .featured-title {
+        font-size: 16px;
+    }
+
+    .trusted-seller {
+        font-size: 14px;
+    }
+
+    .time-banner {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .featured-car {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .featured-info h2 {
+        font-size: 18px;
+    }
+
+    .featured-info h3 {
+        font-size: 20px;
+    }
+
+    .featured-title {
+        font-size: 14px;
+    }
+
+    .trusted-seller {
+        font-size: 12px;
+    }
+
+    .time-banner {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+
+    .featured-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .car-details-main {
+        align-items: flex-start;
+    }
+
+    .featured-image {
+        width: 100%;
+    }
+
+    .find-more {
+        margin-top: 10px;
+    }
+}
